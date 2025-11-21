@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+openai
+httpx
+pydantic
+pydantic-settings
+beautifulsoup4
+lxml
+readability-lxml
+python-dotenv
