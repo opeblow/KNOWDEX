@@ -4,6 +4,7 @@ openai
 httpx
 pydantic
 pydantic-settings
+sqlmodel
 beautifulsoup4
 lxml
 readability-lxml
