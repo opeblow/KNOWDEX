@@ -19,7 +19,7 @@ class ResearchHistoryResponse(BaseModel):
 async def get_history():
     """Returns every question and answer a user ever asked KNOWDEX sorted newest first"""
     with Session(engine) as session:
-        statement=select(User).where(User.mail=="user@knowdex.local")
+        statement=select(User).where(User.email=="user@knowdex.local")
         user=session.exec(statement).first()
 
         if not user:
@@ -44,3 +44,4 @@ async def get_history():
                 }
             )
         return history
+s
