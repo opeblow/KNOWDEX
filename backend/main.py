@@ -4,6 +4,7 @@ import uvicorn
 from backend.routers import research,history
 from backend.database import engine
 from backend.models import User,Research
+import os
 
 with engine.begin() as conn:
     User.metadata.create_all(bind=conn)
@@ -38,6 +39,4 @@ def home():
 
     }
 
-if __name__=="__main__":
-    print("Starting KNOWDEX Backend...")
-    uvicorn.run("backend.main:",host="127.0.0.1",port=8000,reload=True)
+    
