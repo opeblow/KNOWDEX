@@ -44,4 +44,3 @@ async def get_history():
                 }
             )
         return history
-s
