@@ -1,3 +1,4 @@
+# Backend dependencies
 fastapi
 uvicorn[standard]
 openai
@@ -9,4 +10,10 @@ beautifulsoup4
 lxml
 readability-lxml
 python-dotenv
-sqlmodel
+
+# Chainlit frontend
+chainlit>=1.0.0
+
+# Database
+sqlalchemy
+aiosqlite

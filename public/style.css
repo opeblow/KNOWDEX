@@ -1,0 +1,82 @@
+/* KNOWDEX Custom Styling */
+
+/* Improve message spacing and readability */
+.message-container {
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Style for sources section */
+.sources-section {
+    background-color: #f5f5f5;
+    border-left: 4px solid #2196F3;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Improve code block styling */
+pre {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+/* Loading indicator */
+.loading-dots {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.loading-dots::after {
+    content: '...';
+    animation: dots 1.5s steps(3, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% {
+        content: '';
+    }
+    40% {
+        content: '.';
+    }
+    60% {
+        content: '..';
+    }
+    80%, 100% {
+        content: '...';
+    }
+}
+
+/* Citation links */
+a[href^="http"] {
+    color: #2196F3;
+    text-decoration: none;
+    border-bottom: 1px solid #2196F3;
+    transition: all 0.3s ease;
+}
+
+a[href^="http"]:hover {
+    color: #1976D2;
+    border-bottom: 2px solid #1976D2;
+}
+
